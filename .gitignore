@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#MyAPIKeyFile
+RiotAPIKey.py
+
+#IgnorePyCharmIdea
+.idea

@@ -1,5 +1,7 @@
+import RiotAPIKey as APIKey
+
 API_KEY = {
-    'api_key': 'RGAPI-a49bd981-5f0b-4874-990a-a3161b1ae7cb'
+    'api_key': APIKey.API_KEY['api_key']
 }
 
 URLS = {
