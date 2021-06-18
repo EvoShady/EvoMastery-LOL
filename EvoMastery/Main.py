@@ -1,11 +1,11 @@
 from RiotAPI import RiotAPI
+from SummonerProfile import SummonerProfile
 
 
 def main():
-    api = RiotAPI()
-    summoner_by_name_response = api.summoner_v4_by_name('EvoShady')
-    summoner_encrypted_id = summoner_by_name_response['id']
-    print(summoner_encrypted_id)
+    summoner_profile = SummonerProfile('EvoShady', 'euw1')
+    print(summoner_profile.get_summoner_encrypted_id_by_name())
+    print()
 
 
 if __name__ == '__main__':
