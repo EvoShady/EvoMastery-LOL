@@ -17,6 +17,8 @@ class RiotAPI(object):
         )
         return response.json()
 
-    def test_func(self):
-        specific_api_url = Consts.URLS['champion_v3']
+    def summoner_v4_by_name(self, summoner_name):
+        specific_api_url = Consts.URLS['summoner_v4_by_name'].format(
+            summonerName=summoner_name,
+        )
         return self._request(specific_api_url)

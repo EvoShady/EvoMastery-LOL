@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 #MyAPIKeyFile
-RiotAPIKey.py
+EvoMastery/RiotAPIKey.py
 
 #IgnorePyCharmIdea
+.idea
