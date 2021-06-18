@@ -6,6 +6,7 @@ API_KEY = {
 
 URLS = {
     'base': 'https://{region}.api.riotgames.com{specific_api_url}?api_key={api_key}',
+    'summoner_v4_by_name': '/lol/summoner/v4/summoners/by-name/{summonerName}',
     'champion_v3': '/lol/platform/v3/champion-rotations'
 }
 
