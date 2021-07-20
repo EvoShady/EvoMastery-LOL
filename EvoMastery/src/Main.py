@@ -8,7 +8,11 @@ def main():
     riot_api = RiotAPI()
     champions_mastery = riot_api.champion_mastery_v4_by_summoner(summoner_profile.summoner_name)
     for champion in champions_mastery:
-        print(champion['championId'], champion['championPoints'], champion['chestGranted'])
+        pass
+        # print(champion['championId'], champion['championPoints'], champion['chestGranted'])
+    with open("./misc/champions.json", "r") as f:
+        champions_json = json.load(f)
+    print(champions_json)
 
 
 if __name__ == '__main__':
