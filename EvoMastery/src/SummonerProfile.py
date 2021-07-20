@@ -1,4 +1,4 @@
-from RiotAPI import RiotAPI
+from EvoMastery.src.RiotAPI import RiotAPI
 
 SUMMONER_LEVEL = 'summonerLevel'
 UNKNOWN = 'Unknown'
