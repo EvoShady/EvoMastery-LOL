@@ -36,3 +36,8 @@ class RiotAPI(object):
             encryptedSummonerId=encrypted_summoner_id[ID]
         )
         return self._request(specific_api_url)
+
+    def get_champions_json(self):
+        champions_url = 'http://ddragon.leagueoflegends.com/cdn/11.15.1/data/en_US/champion.json'
+        champions_json = requests.get(champions_url)
+        return champions_json.json()
