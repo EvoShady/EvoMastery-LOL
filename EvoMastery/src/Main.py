@@ -1,5 +1,6 @@
 from RiotAPI import RiotAPI
 from SummonerProfile import SummonerProfile
+from tkinter import *
 
 
 def main():
@@ -10,6 +11,17 @@ def main():
     champions_json = riot_api.get_champions_json()
     for champion in champions_json['data']:
         print(champions_json['data'][champion]['id'], champions_json['data'][champion]['key'])
+
+    root = Tk()
+    i = j = 0
+    for champion in champions_json['data']:
+        Label(root, text=champions_json['data'][champion]['id']).grid(row=i, column=j)
+        j += 1
+        if j == 9:
+            j = 0
+            i += 1
+
+    root.mainloop()
 
 
 if __name__ == '__main__':
